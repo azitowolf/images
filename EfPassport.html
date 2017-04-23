@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>AZW|EFTech</title>
+		<title>AZW|EFPass</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -20,9 +20,8 @@
 			<div id="wrapper">
 
 				<!-- Header -->
-				<!-- Note: The "styleN" class below should match that of the banner element. -->
-					<header id="header" class="alt style2">
-						<a href="index.html" class="logo"><strong>Portfolio</strong> <span>by weBuild</span></a>
+					<header id="header">
+						<a href="index.html" class="logo"><strong>Portfolio</strong> <span>by Kiwi</span></a>
 						<nav>
 							<a href="#menu">Menu</a>
 						</nav>
@@ -42,113 +41,62 @@
 						</ul>
 					</nav>
 
-				<!-- Banner -->
-				<!-- Note: The "styleN" class below should match that of the header element. -->
-					<section id="banner" class="style2">
-						<div class="inner">
-							<span class="image">
-								<img src="images/stylish-passport.jpg" alt="" />
-							</span>
-							<header class="major">
-								<h1>EF Global Passport Site</h1>
-							</header>
-							<div class="content">
-								<p>{Web Application and UX}</p>
-							</div>
-						</div>
-					</section>
-
 				<!-- Main -->
-					<div id="main">
-
+					<div id="main" class="alt">
+						<section id="banner" class="style2">
+							<div class="inner">
+								<span class="image">
+									<img src="#" alt="" />
+								</span>
+								<header class="major">
+									<h1>EF Passport Entry Website</h1>
+								</header>
+								<div class="content">
+									<p>{Full Stack Application and UX}</p>
+								</div>
+							</div>
+						</section>
 						<!-- One -->
 							<section id="one">
 								<div class="inner">
 									<header class="major">
-										<h2>Company culture</h2>
+										<h1>The Project</h1>
 									</header>
-									<p>The aim of this project was to create a powerful application to process the thousands of passport entries</p>
+									<p>Education first sends 250,000 students a year from the United States to all corners of the world. This means that they also need to processes hundreds of thousands of students passport information. Before my team and I tackled this problem we were processing this information by email - students would take pictures of their passport, and send them to their teachers, who would take lists of passport information and email it to tour consultants, who would then enter the same passport information into our companies CRM.</p> 									
+									<span class="image main"><img src="images/passport-flow.jpg" alt="" /></span>
+									<h2>My Role</h2>
+									<p>For this project I was the project and technical lead, in charge of leading the planning dialogue between developers (myself and two others), designers, and business analysts and deciding on a UX. When it came to implementation, I picked the technology used to build the microsite and using my technical knowledge broke down the task so that  more than one engineer would be able to work on it simultaneously. I also wrote the entirety of the client-side software for the project. The project’s duration from start to finish was 2 months.</p> 
+									<span class="image main"><img src="images/Passport3.png" alt="" /></span>	
+									<h2>Challenges</h2>	
+
+									<p>Business constraints - We use our passport information to buy plane tickets for our students. This means that if there is a mismatch (even just a single letter discrepancy) between the student’s name and their passport information, we might end up buying them a ticket that they are unable to use at the airport. Additionally, we do not allow our customers to change their names themselves because this would be a liability if they changed their name by accident. So during the passport entry flow, we needed to seamlessly test to make sure that their information in our system matched the information they were about to enter into the database, and allow them to call HQ if there were any issues. A couple prototypes of the design for this flow are below.</p>
+									<p>Application layers - EF’s technology stack is very complicated and for this project I needed to break down tasks at all levels of our information systems. The request needed to hit a secure api and then translate that into another request to write to our CRM product. I wrote tickets for other engineers in other systems to work on this project so that everything would fit together seamlessly.</p>
+									<p>Entry point - The business had several ideas for how to release this application, but eventually landed on an email only release to start. This created a really interesting problem which was that our application needed to be able to generate a totally unique passport entry form for a unique URL. We would email that URL out to users and they would follow that to view the site.</p> 
+
+									<section class="spotlights">
+										<section>
+											<a href="http://www.eftours.com/" class="image">
+												<img src="images/Passport2.png" alt="" data-position="center center">
+											</a>
+											<div class="content">
+												<div class="inner">
+													<header class="major">
+														<h3>The Solution</h3>
+													</header>
+													<p>The web application we built fit squarely within all of our business and technological constraints and was able to securely connected our customers directly to us.  The microsite allowed our passengers to log in securely and send encrypted passport information directly to our business database. We estimated that the application saved the company more than 500 thousand dollars per year in time spent processing passports!</p>
+													<ul class="actions">
+														<li><a href="http://www.eftours.com/" class="button">The Site</a></li>
+													</ul>
+												</div>
+											</div>
+										</section>
+									</section>
+
+									
 								</div>
 							</section>
 
-						<!-- Two -->
-							<section id="two" class="spotlights">
-								<section>
-									<a href="http://www.eftours.com/tech/" class="image">
-										<img src="images/whiteboard.jpg" alt="" data-position="center center" />
-									</a>
-									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>Tight quarters</h3>
-											</header>
-											<p>We began this project with a small team of developers and designers in 2x3 meter sq room full of potato chips and coffee. We worked collaboratively, prototyping <a href="http://codepen.io/azitowolf/pen/XKxpAR">{website concepts}</a> and design mockups simultaneously</p>
-											<ul class="actions">
-												<li><a href="http://www.eftours.com/tech/" class="button">The Site</a></li>
-											</ul>
-										</div>
-									</div>
-								</section>
-								<section>
-									<a href="http://www.eftours.com/tech/" class="image">
-										<img src="images/ef-problem.png" alt="" data-position="top center" />
-									</a>
-									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>People and problems</h3>
-											</header>
-											<p>We decided that what makes us love our jobs at EF are the problems that we get to solve, and the people that we get to solve them with. The site opens with a slider that asks the viewer to think about some of the cool problems they might see working here.</p>
-											<ul class="actions">
-												<li><a href="http://www.eftours.com/tech/" class="button">The Site</a></li>
-											</ul>
-										</div>
-									</div>
-								</section>
-
-
-								<section>
-									<a href="https://github.com/azitowolf/react-jigsaw" class="image">
-										<img src="images/react-js-logo.png" alt="" data-position="25% 25%" />
-									</a>
-									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>Cool tech</h3>
-											</header>
-											<p> The best software frameworks are powerful and structural, but allow you to think creatively and improvise. I got to work with reactjs for the duration of the project and <a href="https://github.com/azitowolf/react-jigsaw">made a plugin based on it</a>. </p>
-											<ul class="actions">
-												<li><a href="https://github.com/azitowolf/react-jigsaw" class="button">Check it out</a></li>
-											</ul>
-										</div>
-									</div>
-								</section>
-
-								<section>
-									<a href="http://www.eftours.com/tech/" class="image">
-										<img src="images/Gretchen.jpg" alt="" data-position="25% 25%" />
-									</a>
-									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>Design and develop</h3>
-											</header>
-											<p>Overall the project allowed me to flex my creative muscle and think as a UXer and a developer to build a beautiful and sleek site - also one that highlights the beautiful people I work with :) </p>
-											<ul class="actions">
-												<li><a href="http://www.eftours.com/tech/" class="button">The Site</a></li>
-											</ul>
-										</div>
-									</div>
-								</section>
-
-
-
-							
-
-
 					</div>
-
-
 
 				<!-- Footer -->
 					<footer id="footer">
