@@ -3778,6 +3778,8 @@
 		-ms-transition: -ms-filter 0.35s ease, -webkit-filter 0.35s ease, opacity 0.375s ease-out;
 		transition: filter 0.35s ease, -webkit-filter 0.35s ease, opacity 0.375s ease-out;
 		padding-top: 3.25em;
+		max-width: 850px;
+		margin:0px auto;
 	}
 
 		#wrapper.is-transitioning {
