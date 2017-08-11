@@ -54,27 +54,14 @@
 									<p><b>Business constraints.</b> We use our passport information to buy plane tickets for our students. This means that if there is a mismatch (even just a single letter discrepancy) between the student’s name and their passport information, we might end up buying them a ticket that they are unable to use at the airport. Additionally, we do not allow our customers to change their names themselves because this would be a liability if they changed their name by accident. So during the passport entry flow, we needed to seamlessly test to make sure that their information in our system matched the information they were about to enter into the database, and allow them to call HQ if there were any issues. A couple prototypes of the design for this flow are below.</p>
 									<p><b>Application layers.</b> EF’s technology stack is very complicated and for this project I needed to break down tasks at all levels of our information systems. The request needed to hit a secure api and then translate that into another request to write to our CRM product. I wrote tickets for other engineers in other systems to work on this project so that everything would fit together seamlessly.</p>
 									<p><b>Entry point.</b> The business had several ideas for how to release this application, but eventually landed on an email only release to start. This created a really interesting problem which was that our application needed to be able to generate a totally unique passport entry form for a unique URL. We would email that URL out to users and they would follow that to view the site.</p> 
-
-									<section class="spotlights">
-										<section>
-											<a href="http://www.eftours.com/" class="image">
-												<img src="images/Passport2.png" alt="" data-position="center center">
-											</a>
-											<div class="content">
-												<div class="inner">
-													<header class="major">
-														<h3>The Solution</h3>
-													</header>
-													<p>The web application we built fit squarely within all of our business and technological constraints and was able to securely connected our customers directly to us.  The microsite allowed our passengers to log in securely and send encrypted passport information directly to our business database. We estimated that the application saved the company more than 500 thousand dollars per year in time spent processing passports!</p>
-													<ul class="actions">
-														<li><a href="http://www.eftours.com/" class="button">The Site</a></li>
-													</ul>
-												</div>
-											</div>
-										</section>
-									</section>
-
-									
+									<header class="major">
+										<h3>The Solution</h3>
+									</header>
+									<span class="image main"><img src="images/EFPassportFinal.png" alt="" /></span>
+									<p>The web application we built fit squarely within all of our business and technological constraints and was able to securely connected our customers directly to us.  The microsite allowed our passengers to log in securely and send encrypted passport information directly to our business database. We estimated that the application saved the company more than 500 thousand dollars per year in time spent processing passports!</p>
+									<ul class="actions">
+										<li><a href="http://www.eftours.com/" class="button">The Site</a></li>
+									</ul>																		
 								</div>
 							</section>
 
