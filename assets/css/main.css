@@ -1831,8 +1831,18 @@
 		width: -ms-max-content;
 		width: max-content;
 		margin-bottom: 2em;
+		position: relative;
+		cursor: pointer;
 	}
-
+	.page-one header.major::before {
+		content: "";
+		position: absolute;
+		height:95px;
+		width: 4px;
+		top:0;
+		left:-18px;
+		background-color: #8d82c4;
+	}		
 		header.major > :first-child {
 			margin-bottom: 0;
 			width: calc(100% + 0.5em);
@@ -2809,77 +2819,6 @@
 				z-index: 4;
 			}
 
-			.tiles article:before {
-				-moz-transition: opacity 0.5s ease;
-				-webkit-transition: opacity 0.5s ease;
-				-ms-transition: opacity 0.5s ease;
-				transition: opacity 0.5s ease;
-				bottom: 0;
-				content: '';
-				display: block;
-				height: 100%;
-				left: 0;
-				opacity: 0.85;
-				position: absolute;
-				width: 100%;
-				z-index: 2;
-			}
-
-			.tiles article:after {
-				background-color: rgba(36, 41, 67, 0.25);
-				content: '';
-				display: block;
-				height: 100%;
-				left: 0;
-				position: absolute;
-				top: 0;
-				width: 100%;
-				z-index: 1;
-			}
-
-			.tiles article:hover:before {
-				opacity: 0;
-			}
-
-			.tiles article.is-transitioning {
-				-moz-transform: scale(0.95);
-				-webkit-transform: scale(0.95);
-				-ms-transform: scale(0.95);
-				transform: scale(0.95);
-				-moz-filter: blur(0.5em);
-				-webkit-filter: blur(0.5em);
-				-ms-filter: blur(0.5em);
-				filter: blur(0.5em);
-				opacity: 0;
-			}
-
-			.tiles article:nth-child(4n - 1), .tiles article:nth-child(4n - 2) {
-				width: 60%;
-			}
-
-			.tiles article:nth-child(6n - 5):before {
-				background-color: #6fc3df;
-			}
-
-			.tiles article:nth-child(6n - 4):before {
-				background-color: #8d82c4;
-			}
-
-			.tiles article:nth-child(6n - 3):before {
-				background-color: #ec8d81;
-			}
-
-			.tiles article:nth-child(6n - 2):before {
-				background-color: #e7b788;
-			}
-
-			.tiles article:nth-child(6n - 1):before {
-				background-color: #8ea9e8;
-			}
-
-			.tiles article:nth-child(6n):before {
-				background-color: #87c5a4;
-			}
 
 		@media screen and (max-width: 1280px) {
 
@@ -2903,8 +2842,8 @@
 		@media screen and (max-width: 736px) {
 
 			.tiles article {
-				padding: 3em 1.5em 1em 1.5em ;
-				height: 16em;
+				padding: 0 1.5em 0 1.5em ;
+				height: 10em;
 				max-height: none;
 				min-height: 0;
 			}
@@ -2922,7 +2861,6 @@
 			}
 
 				.tiles article {
-					height: 20em;
 					width: 100% !important;
 				}
 
@@ -3416,8 +3354,7 @@
 		background-attachment: fixed;
 		background-position: center;
 		background-repeat: no-repeat;
-		background-size: cover;
-		border-bottom: 0 !important;
+		background-size: cover;		
 		cursor: default;
 		height: 60vh;
 		margin-bottom: -3.25em;
@@ -3426,6 +3363,9 @@
 		position: relative;
 		top: -3.25em;
 	}
+		#banner .buttons {
+			border-bottom: 2px solid white;
+		}
 
 		#banner:after {
 			-moz-transition: opacity 2.5s ease;
@@ -3611,7 +3551,7 @@
 				}
 
 				#banner.major {
-					padding: 8em 0 4em 0 ;
+					padding: 8em 0 0 0 ;					
 				}
 
 		}
