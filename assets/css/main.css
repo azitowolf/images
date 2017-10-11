@@ -3583,7 +3583,9 @@
 						padding: 3em 0 1em 0 ;
 						width: calc(100% - 3em);
 					}
-
+					#header-btns a {
+						margin-bottom: 0.4em !important;
+					}
 				}
 
 		#main.alt {
