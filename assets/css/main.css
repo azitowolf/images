@@ -2826,7 +2826,7 @@
 				padding: 4em 3em 2em 3em ;
 				height: 30vh;
 				max-height: 30em;
-				min-height: 20em;
+				min-height: 12em;
 			}
 
 		}
@@ -3363,9 +3363,7 @@
 		position: relative;
 		top: -3.25em;
 	}
-		#banner .buttons {
-			border-bottom: 2px solid white;
-		}
+
 
 		#banner:after {
 			-moz-transition: opacity 2.5s ease;
@@ -3538,13 +3536,19 @@
 					max-height: none;
 				}
 
+			
+				
+
 		}
 
 		@media screen and (max-width: 480px) {
 
 			#banner {
 				padding: 6em 0 2em 0 ;
-			}
+			}	
+				#banner .buttons {
+					border-bottom: 2px solid white;
+				}	
 
 				#banner > .inner .content p br {
 					display: none;
