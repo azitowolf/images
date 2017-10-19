@@ -1837,9 +1837,9 @@
 	.page-one header.major::before {
 		content: "";
 		position: absolute;
-		height:95px;
-		width: 4px;
-		top:0;
+		height:100%;
+		width: 2px;
+		top:7px;
 		left:-18px;
 		background-color: #8d82c4;
 	}		
