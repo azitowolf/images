@@ -1837,9 +1837,9 @@
 	.page-one header.major::before {
 		content: "";
 		position: absolute;
-		height:95px;
-		width: 4px;
-		top:0;
+		height:100%;
+		width: 2px;
+		top:7px;
 		left:-18px;
 		background-color: #8d82c4;
 	}		
@@ -2784,9 +2784,9 @@
 			background-repeat: no-repeat;
 			background-size: cover;
 			cursor: default;
-			height: 40vh;
+			height: 20vh;
 			max-height: 40em;
-			min-height: 23em;
+			min-height: 12em;
 			overflow: hidden;
 			position: relative;
 			width: 40%;
